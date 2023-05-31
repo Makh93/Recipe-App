@@ -1,0 +1,59 @@
+body{
+
+background-color: black;
+
+}
+
+
+.footer{
+
+height: 400px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+justify-items: center;
+}
+
+.div1{
+
+
+    width: 450px;
+    color:azure;
+    margin-top: 50px;
+    margin-Left:43rem;
+    
+    
+    
+    }
+    .div1 h3{
+    color: orange;
+    
+    }
+
+    .div2 h4{
+
+color: orange
+
+
+
+    }
+    .div2 {
+
+
+color:gray;
+
+
+    }
+
+    .div2 ul{
+
+margin-left: 30rem;
+
+
+    }
+
+
+     
+
+
+    
