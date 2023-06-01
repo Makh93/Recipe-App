@@ -18,6 +18,13 @@ import spaghetti from './Images/spaghetti.jpg'
 import prawns from './Images/prawns.jpg'
 import cake from './Images/cake.jpg'
 import pie from './Images/pie.jpg'
+import men from './Images/men.jpg'
+import boy from './Images/boy.jpg'
+import girl from './Images/girl.jpg'
+import women from './Images/women.jpg'
+import junge from './Images/junge.jpg'
+import floral from './Images/floral.jpg'
+import boss from './Images/boss.jpg'
 function App() {
 
 
@@ -37,6 +44,13 @@ spaghetti: spaghetti,
 prawns:prawns,
 cake:cake,
 pie:pie,
+women:women,
+girl:girl,
+boy:boy,
+men:men,
+junge:junge,
+floral:floral,
+boss:boss,
 }
 
 
@@ -51,7 +65,7 @@ pie:pie,
 <Route  index element={<Default images={images}/>}/>
 <Route path='default' element={<Default  images={images} />}/>
 <Route path='recipes' element={<Recipes/>}/>
-<Route path = 'member' element= {<Member/>}/>
+<Route path = 'member' element= {<Member images={images}/>}/>
 <Route path = 'login' element= {<Login />}/>
 </Route>
 

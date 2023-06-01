@@ -7,7 +7,7 @@ import '../Components/footer.css'
 
 export default function Footer() {
   return (
-    <div className='footer' display={{display: 'flex', justifyItem: 'center'}}>
+    <div className='footer' display={{display: 'flex', justifyItem: 'center',}}>
 
 
         <div className='div1'>
@@ -43,7 +43,7 @@ About SocialChef Community</h3>
 
 
 
-<div style={{marginLeft: '10rem'}}>
+<div style={{marginLeft: '15rem'}}>
 <ul>
   <li><FaFacebookF/></li>
   <li><FaInstagramSquare/></li>
@@ -52,7 +52,7 @@ About SocialChef Community</h3>
 </div>
 
 
-<p style={{color:'grey', marginRight: '3rem', marginBottom: '40px'}}>© socialchef.com 2023. All rights reserved.</p>
+<p style={{color:'grey', marginRight: '6rem', marginBottom: '40px'}}>© socialchef.com 2023. All rights reserved.</p>
     </div>
   )
 }

@@ -1,0 +1,32 @@
+.search{
+
+padding: 15px;
+color: orange;
+background-color: black;
+border-radius: 5px;
+width: 130px;
+margin-left: 40px;
+
+
+}
+.input :hover{
+
+
+
+    border:  1px solid orange 
+}
+
+.dark{
+
+    border-radius: 30px;
+    cursor: pointer;
+    font-size:1rem;
+    padding: 0.6rem;
+    border: 2px solid orange;
+    color: orange;
+    background-color: black;
+    position: relative;
+   top: -8rem;
+    left: 54rem;
+
+}

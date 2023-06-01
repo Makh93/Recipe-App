@@ -13,7 +13,7 @@ export default function Default({ images }) {
 
   return (
     <div className="default" style={{ backgroundColor }}>
-      <button onClick={toggleBackground}>Change Background</button>
+      <button  className= 'darkmode'  onClick={toggleBackground}>Dark Mode</button>
 
       <h1>Popular recipe Categories</h1>
 

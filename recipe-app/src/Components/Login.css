@@ -1,0 +1,39 @@
+.inputs input{
+
+
+display: flex;
+flex-direction: column;
+
+width: 23rem;
+font-size: 25px;
+color: orange;
+background-color: black;
+padding: 10px;
+border-radius: 20px;
+justify-content: space-between;
+justify-items: center;
+margin-left: 48rem;
+margin-top: 1rem;
+
+}
+
+p{
+
+color:gray;
+font-size: 20px;
+margin-bottom: 50px;
+}
+
+.register{
+
+
+    padding: 15px;
+    color: orange;
+    background-color: black;
+    border-radius: 5px;
+    width: 130px;
+    margin-left: 40px;
+   margin-bottom: 50px;
+   margin-top: 50px;
+
+}
