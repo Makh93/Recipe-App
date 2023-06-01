@@ -4,15 +4,15 @@ import axios from "axios";
 import "../Components/recipes.css";
 
 export default function Recipes() {
-  const ID = "69a18d4d";
-  const key = "b6c43c1a68477238e12876004aadd9f7";
+  //const ID = "69a18d4d";
+ // const key = "b6c43c1a68477238e12876004aadd9f7";
 
   const [query, setQuery] = useState("");
-  const [recipes, setRecipe] = useState(null);
+  const [recipes, setRecipe] = useState([]);
 
   //const url = {`/search?q=${query}&app_id=${ID}&app_key=${key}`}
 
-  const url = `https://api.edamam.com/api/food-database/v2/parser?app_id=69a18d4d&app_key=e249ff40bcb91bccb6236e30eb06f5d9&ingr=pasta&nutrition-type=cooking`;
+  const url = `https://api.edamam.com/api/food-database/v2/parser?app_id=69a18d4d&app_key=e249ff40bcb91bccb6236e30eb06f5d9&ingr=${query}&nutrition-type=cooking`;
 
   async function getRecipes() {
     try {
@@ -23,7 +23,7 @@ export default function Recipes() {
       console.log(result)
  
       setRecipe(result.data.hints);
-      console.log(result.data.hints.food.label);
+      console.log(result.data.hints.food);
     } catch (e) {
       console.log(e);
     }
@@ -74,17 +74,18 @@ console.log(recipes)
         </button>
       </form>
 
-      <ul>
-        {recipes ? (
-          recipes.map(recipe => {
-            <li key={recipe.food.label}>
-              <img src={recipe.food.image} alt="pasta" />
-            </li>;
-          })
-        ) : (
-          <h1>Loading...</h1>
-        )}
-      </ul>
+    
+      {recipes.map(recipe => {
+  return (
+    <div  className= 'recipes' key={recipe.food.label}>
+      <img src={recipe.food.image} alt="food" />
+      {recipe.label}
+      {recipe.nutrients}
+      
+      
+    </div>
+  );
+})} 
     </div>
   );
 }

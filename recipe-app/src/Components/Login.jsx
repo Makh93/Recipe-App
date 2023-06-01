@@ -40,7 +40,7 @@ required />
 <div>
 </div>
 
-<h2 style={{color: 'orange', marginTop: '20px', marginLeft: '40px'}}>Profile Details</h2>
+<h2 style={{color: 'orange', marginTop: '20px'}}>Profile Details</h2>
 <input type="text"
 placeholder='Name' />
 
