@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import axios from "axios";
 import "../Components/recipes.css";
-
+import { Fade} from "react-awesome-reveal";
 export default function Recipes() {
   //const ID = "69a18d4d";
  // const key = "b6c43c1a68477238e12876004aadd9f7";
@@ -12,18 +12,26 @@ export default function Recipes() {
 
   //const url = {`/search?q=${query}&app_id=${ID}&app_key=${key}`}
 
-  const url = `https://api.edamam.com/api/food-database/v2/parser?app_id=69a18d4d&app_key=e249ff40bcb91bccb6236e30eb06f5d9&ingr=${query}&nutrition-type=cooking`;
-
+  //const url = `https://api.edamam.com/api/food-database/v2/parser?app_id=69a18d4d&app_key=e249ff40bcb91bccb6236e30eb06f5d9&ingr=${query}&nutrition-type=cooking`;
+  const options = {
+    method: 'GET',
+    url: `https://low-carb-recipes.p.rapidapi.com/search`,
+    params: {
+      
+      limit: '4'
+    },
+    headers: {
+      'X-RapidAPI-Key': '641f7f5a75msh09e1d463b52fe93p17e7f1jsne2964908cd2a',
+      'X-RapidAPI-Host': 'low-carb-recipes.p.rapidapi.com'
+    }
+  };
   async function getRecipes() {
     try {
-      const result = await axios.get(url, {
-        mode: "no-cors",
-        credentials: "include",
-      });
+      const result = await axios.request(options);
       console.log(result)
  
-      setRecipe(result.data.hints);
-      console.log(result.data.hints.food);
+      setRecipe(result.data);
+      console.log(result.data);
     } catch (e) {
       console.log(e);
     }
@@ -47,16 +55,17 @@ console.log(recipes)
   };
 
   return (
-    <div style={{ backgroundColor }}>
-      <h1>Custom Search</h1>
+    <div className="box" style={{ backgroundColor }}>
+      <Fade style={{color: 'orange', FontWeight: '900', fontSize: '40px', marginLeft: '10rem'}}  cascade damping={1e-1} >Low Carb Recipes</Fade>
       <button className="dark" onClick={toggleBackground}>
         Dark Mode
       </button>
       <form onSubmit={submit}>
-        <input
+      {/*  <input
           type="text"
-          placeholder="search Recipe"
+          placeholder="Keto Recipes, Click Search"
           value={query}
+          disabled
           style={{
             padding: "13px",
             width: "30rem",
@@ -68,7 +77,7 @@ console.log(recipes)
           onChange={(e) => setQuery(e.target.value)}
           className="input"
         />
-
+        */}
         <button className="search" type="submit">
           Search
         </button>
@@ -77,11 +86,29 @@ console.log(recipes)
     
       {recipes.map(recipe => {
   return (
-    <div  className= 'recipes' key={recipe.food.label}>
-      <img src={recipe.food.image} alt="food" />
-      {recipe.label}
-      {recipe.nutrients}
+    <div  className= 'recipes' >
+
+
+      <div>
+      <img style={{width: '500px', border:'5px solid orange' }} src={recipe.image} alt="food" />
+    <h1> {recipe.name}</h1>
+  <ul style={{display:'flex',flexDirection: 'column'}}>
+
+
+<li> {recipe.steps[0]}</li>
+<li> {recipe.steps[1]}</li>
+<li> {recipe.steps[2]}</li>
+<li> {recipe.steps[3]}</li>
+<li> {recipe.steps[4]}</li>
+
+
+
+
+
+  </ul>
+     
       
+     </div>
       
     </div>
   );

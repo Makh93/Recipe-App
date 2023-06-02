@@ -7,11 +7,13 @@ background-color: black;
 
 .footer{
 
-height: 400px;
+height: 300px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 justify-items: center;
+border-top: 1px solid gray;
+
 }
 
 .div1{
@@ -20,7 +22,8 @@ justify-items: center;
     width: 450px;
     color:azure;
     margin-top: 50px;
-    margin-Left:45rem;
+    margin-left: 45rem;
+
     
     
     
@@ -40,17 +43,21 @@ color: orange
 
 
 color:gray;
-margin-right: 110px;
+margin-left: 2rem;
 
     }
 
     .div2 ul{
 
-margin-left: 35rem;
-
+        margin-left: 32rem;
 
     }
 
+    .icons{
+
+
+        margin-left: 12rem;
+    }
 
      
 
