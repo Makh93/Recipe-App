@@ -1,4 +1,4 @@
-# Recipe-App
+
 
 # Recipe App
 
@@ -27,6 +27,7 @@ To run the Recipe App locally on your machine, follow these steps:
 - React Router: For handling navigation and routing within the app.
 - CSS: Styling the components and layouts.
 - API: Consuming recipe data from a remote server or API (optional).
+- React-Icons : Used React-Icons for styling.
 
 ## Contributing
 
@@ -47,10 +48,9 @@ We would like to express our gratitude to the following resources for their inva
 - [React Documentation](https://reactjs.org/docs/)
 - [React Router Documentation](https://reactrouter.com/)
 - [Unsplash](https://unsplash.com/) for providing high-quality recipe images.
-
+- [React.Icons] (https://react-icons.github.io/react-icons/)
 ## Contact
 
 For any inquiries or feedback, please contact us at abeeraareej@gmail.com. We appreciate your input and would be happy to assist you.
 
 Happy cooking and enjoy your culinary adventures with the Recipe App!
-
