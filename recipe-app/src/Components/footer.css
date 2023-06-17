@@ -36,3 +36,11 @@ body {
 .icons {
   margin-left: 12rem;
 }
+
+.icons li:hover{
+
+
+color: orange;
+font-size: 45px ;
+transition: 1s; 
+}
