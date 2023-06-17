@@ -51,6 +51,6 @@ We would like to express our gratitude to the following resources for their inva
 - [React.Icons] (https://react-icons.github.io/react-icons/)
 ## Contact
 
-For any inquiries or feedback, please contact us at abeeraareej@gmail.com. We appreciate your input and would be happy to assist you.
+For any inquiries or feedback, please contact us at [abeeraareej@gmail.com]. We appreciate your input and would be happy to assist you.
 
 Happy cooking and enjoy your culinary adventures with the Recipe App!
