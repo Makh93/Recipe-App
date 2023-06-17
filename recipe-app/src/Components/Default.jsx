@@ -1,8 +1,26 @@
 import React, { useState } from "react";
 import "../Components/default.css";
-import Footer from "./Footer";
+//import Footer from "./Footer";
 
 export default function Default({ images }) {
+
+  //linKs for recipes
+  const url = "https://www.livewellbakeoften.com/chocolate-oreo-cupcakes/";
+  const url2 = "https://www.bbcgoodfood.com/recipes/salted-tomato-salad";
+  const url3 = "https://www.onceuponachef.com/recipes/gingerbread-cookies.html";
+  const url4 =
+    "https://www.kochbar.de/rezept/345227/Italienische-Steinofen-Pizza.html";
+  const url5 =
+    "https://www.recipesfromitaly.com/spaghetti-carbonara-original-recipe/";
+  const url6 =
+    "https://www.jamieoliver.com/recipes/seafood-recipes/sizzling-moroccan-prawns/";
+  const url7 =
+    "https://www.tarladalal.com/blueberry-cheesecake--cheesecakes-recipe-35881r";
+  const url8 =
+    "https://www.inspiredtaste.net/22855/simple-strawberry-pie-recipe/";
+  const target = "_blank";
+
+  // Dark Mode button
   const [isBlack, setIsBlack] = useState(true);
 
   const backgroundColor = isBlack ? "white" : "black";
@@ -13,10 +31,13 @@ export default function Default({ images }) {
 
   return (
     <div className="default" style={{ backgroundColor }}>
-      <button  className= 'darkmode'  onClick={toggleBackground}>Dark Mode</button>
+      <button className="darkmode" onClick={toggleBackground}>
+        Dark Mode
+      </button>
 
       <h1>Popular recipe Categories</h1>
-
+      
+      {/*links to diff. Websites for Recipes */}
       <div
         style={{
           display: "flex",
@@ -41,10 +62,13 @@ export default function Default({ images }) {
               backgroundColor: "orange",
               width: "300px",
               fontSize: "20px",
-              padding: '4px'
+              padding: "4px",
             }}
           >
-            A luxurious black & white chocolate Oreo cupcake
+            <a href={url} target={target}>
+              {" "}
+              A luxurious black & white chocolate Oreo cupcake
+            </a>
           </p>
         </div>
 
@@ -65,10 +89,13 @@ export default function Default({ images }) {
               backgroundColor: "orange",
               width: "300px",
               fontSize: "20px",
-              padding: '4px'
+              padding: "4px",
             }}
           >
-            Delicious and refreshing summer salad
+            <a href={url2} target={target}>
+              {" "}
+              Delicious and refreshing summer salad
+            </a>
           </p>
         </div>
         <div
@@ -88,10 +115,12 @@ export default function Default({ images }) {
               backgroundColor: "orange",
               width: "300px",
               fontSize: "20px",
-              padding: '18px'
+              padding: "18px",
             }}
           >
-           Delightful Christmas cookies
+            <a href={url3} target={target}>
+              Delightful Christmas cookies
+            </a>
           </p>
         </div>
         <div
@@ -111,29 +140,22 @@ export default function Default({ images }) {
               backgroundColor: "orange",
               width: "300px",
               fontSize: "20px",
-              padding: '18px'
+              padding: "18px",
             }}
           >
-            Stein-Oven pizza
+            <a href={url4} target={target}>
+              Stein-Oven pizza
+            </a>
           </p>
         </div>
-
-       
-
-        
-
-       
-
-       
       </div>
-
 
       <div
         style={{
           display: "flex",
           justifyContent: "space-evenly",
           justifyItems: "center",
-          marginBottom: '5rem'
+          marginBottom: "5rem",
         }}
       >
         <div
@@ -153,10 +175,13 @@ export default function Default({ images }) {
               backgroundColor: "orange",
               width: "300px",
               fontSize: "20px",
-              padding: '4px'
+              padding: "4px",
             }}
           >
-          Spaghetti carbonara with rustic bread
+            <a href={url5} target={target}>
+              {" "}
+              Spaghetti carbonara with rustic bread
+            </a>
           </p>
         </div>
 
@@ -177,10 +202,13 @@ export default function Default({ images }) {
               backgroundColor: "orange",
               width: "300px",
               fontSize: "20px",
-              padding: '4px'
+              padding: "4px",
             }}
           >
-            Spicy Morroccan prawns with raddish sauce
+            <a href={url6} target={target}>
+              {" "}
+              Spicy Morroccan prawns with raddish sauce
+            </a>
           </p>
         </div>
         <div
@@ -200,10 +228,13 @@ export default function Default({ images }) {
               backgroundColor: "orange",
               width: "300px",
               fontSize: "20px",
-              padding: '4px'
+              padding: "4px",
             }}
           >
-             Super easy blueberry cheesecake
+            <a href={url7} target={target}>
+              {" "}
+              Super easy blueberry cheesecake
+            </a>
           </p>
         </div>
         <div
@@ -223,25 +254,16 @@ export default function Default({ images }) {
               backgroundColor: "orange",
               width: "300px",
               fontSize: "20px",
-              padding: '5.5px'
+              padding: "5.5px",
             }}
           >
-           Super easy rustic strawberry pie
+            <a href={url8} target={target}>
+              {" "}
+              Super easy rustic strawberry pie
+            </a>
           </p>
         </div>
-
-       
-
-        
-
-       
-
-       
       </div>
-
-
-
-
     </div>
   );
 }

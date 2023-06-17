@@ -28,6 +28,16 @@ color: aliceblue;
 text-decoration: none;
 margin-left: 6rem;
 margin-top: 3rem;
+box-shadow: inset 0 0 0 0 gray;
+color:orange;
+
+transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+}
+.links:hover{
+
+    box-shadow: inset 100px 0 0 0 black;
+    color:white
 
 }
 .Links{
@@ -56,3 +66,4 @@ margin-left: 1.5rem;
 
 
 }
+

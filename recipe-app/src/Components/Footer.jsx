@@ -7,7 +7,7 @@ export default function Footer() {
     <div className="footer">
       <div className="div1">
         <h3>About SocialChef Community</h3>
-
+{/*info Paragraph*/}
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -15,10 +15,11 @@ export default function Footer() {
         </p>
       </div>
 
-      <div className="div2">
-        <h4>Need Help?</h4>
+{/* contact div */ }
+      <div className="Contact">
+        <h4 style={{marginRight:'4rem'}}>Need Help?</h4>
 
-        <p>Contact us via phone or email</p>
+        <p style={{marginRight:'4rem'}}>Contact us via phone or email</p>
 
         <ul>
           <li>
@@ -44,7 +45,7 @@ export default function Footer() {
         </ul>
       </div>
 
-      <p style={{ color: "grey", marginBottom: "40px", marginLeft: '2rem' }}>
+      <p style={{ color: "grey", marginBottom: "40px", marginLeft: "2rem" }}>
         © socialchef.com 2023. All rights reserved.
       </p>
     </div>

@@ -1,65 +1,38 @@
-body{
-
-background-color: black;
-
+body {
+  background-color: black;
 }
 
-
-.footer{
-
-height: 300px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-justify-items: center;
-border-top: 1px solid gray;
-
+.footer {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  border-top: 1px solid gray;
 }
 
-.div1{
+.div1 {
+  width: 450px;
+  color: azure;
+  margin-top: 50px;
+  margin-left: 45rem;
+}
+.div1 h3 {
+  color: orange;
+}
 
+.Contact h4 {
+  color: orange;
+}
+.Contact {
+  color: gray;
+  margin-left: 2rem;
+}
 
-    width: 450px;
-    color:azure;
-    margin-top: 50px;
-    margin-left: 45rem;
+.Contact ul {
+  margin-left: 32rem;
+}
 
-    
-    
-    
-    }
-    .div1 h3{
-    color: orange;
-    
-    }
-
-    .div2 h4{
-
-color: orange
-
-
-    }
-    .div2 {
-
-
-color:gray;
-margin-left: 2rem;
-
-    }
-
-    .div2 ul{
-
-        margin-left: 32rem;
-
-    }
-
-    .icons{
-
-
-        margin-left: 12rem;
-    }
-
-     
-
-
-    
+.icons {
+  margin-left: 12rem;
+}
