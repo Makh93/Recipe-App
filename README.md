@@ -19,7 +19,7 @@ To run the Recipe App locally on your machine, follow these steps:
 2. Navigate to the project directory: `cd recipe-app`.
 3. Install the dependencies: `npm install`.
 4. Start the development server: `npm start`.
-5. The app will be accessible at http://localhost:3000.
+5. The app will be accessible at (http://localhost:3000)
 
 ## Technologies Used
 
