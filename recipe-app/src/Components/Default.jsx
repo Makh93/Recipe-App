@@ -50,10 +50,11 @@ export default function Default({ images }) {
             display: "flex",
             flexDirection: "column",
             marginTop: "80px",
+         
           }}
         >
           <img
-            style={{ width: "300px", height: "200px" }}
+            style={{ width: "300px", height: "200px",    border: "3px solid orange" }}
             src={images.oreo}
             alt="cupcake"
           />
@@ -63,6 +64,7 @@ export default function Default({ images }) {
               width: "300px",
               fontSize: "20px",
               padding: "4px",
+             
             }}
           >
             <a href={url} target={target}>
@@ -80,7 +82,7 @@ export default function Default({ images }) {
           }}
         >
           <img
-            style={{ width: "300px", height: "200px" }}
+            style={{ width: "300px", height: "200px",border: "3px solid orange"  }}
             src={images.salad}
             alt="cupcake"
           />
@@ -106,7 +108,7 @@ export default function Default({ images }) {
           }}
         >
           <img
-            style={{ width: "300px", height: "200px" }}
+            style={{ width: "300px", height: "200px",border: "3px solid orange"  }}
             src={images.cookies}
             alt="cupcake"
           />
@@ -131,7 +133,7 @@ export default function Default({ images }) {
           }}
         >
           <img
-            style={{ width: "300px", height: "200px" }}
+            style={{ width: "300px", height: "200px" ,border: "3px solid orange" }}
             src={images.pizza}
             alt="cupcake"
           />
@@ -166,7 +168,7 @@ export default function Default({ images }) {
           }}
         >
           <img
-            style={{ width: "300px", height: "200px" }}
+            style={{ width: "300px", height: "200px",border: "3px solid orange"  }}
             src={images.spaghetti}
             alt="spaghetti"
           />
@@ -193,7 +195,7 @@ export default function Default({ images }) {
           }}
         >
           <img
-            style={{ width: "300px", height: "200px" }}
+            style={{ width: "300px", height: "200px", border: "3px solid orange" }}
             src={images.prawns}
             alt="cupcake"
           />
@@ -219,7 +221,7 @@ export default function Default({ images }) {
           }}
         >
           <img
-            style={{ width: "300px", height: "200px" }}
+            style={{ width: "300px", height: "200px",border: "3px solid orange"  }}
             src={images.cake}
             alt="cupcake"
           />
@@ -245,7 +247,7 @@ export default function Default({ images }) {
           }}
         >
           <img
-            style={{ width: "300px", height: "200px" }}
+            style={{ width: "300px", height: "200px" ,border: "3px solid orange"}}
             src={images.pie}
             alt="cupcake"
           />
