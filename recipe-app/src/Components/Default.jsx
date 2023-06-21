@@ -230,7 +230,7 @@ export default function Default({ images }) {
               backgroundColor: "orange",
               width: "300px",
               fontSize: "20px",
-              padding: "4px",
+              padding: "10px",
             }}
           >
             <a href={url7} target={target}>
@@ -256,7 +256,8 @@ export default function Default({ images }) {
               backgroundColor: "orange",
               width: "300px",
               fontSize: "20px",
-              padding: "5.5px",
+              padding: "10px",
+              
             }}
           >
             <a href={url8} target={target}>
