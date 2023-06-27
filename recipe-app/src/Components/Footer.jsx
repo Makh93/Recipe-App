@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="div1">
-        <h3>About SocialChef Community</h3>
+        <h3>About SocialChef of Our Community</h3>
 {/*info Paragraph*/}
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam

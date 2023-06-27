@@ -12,13 +12,18 @@ body {
 }
 
 .div1 {
-  width: 450px;
+
   color: azure;
   margin-top: 50px;
-  margin-left: 45rem;
+
 }
 .div1 h3 {
   color: orange;
+  width: 100%;
+}
+.div1 p{
+  width: 400px;
+  margin-left: 750px;
 }
 
 .Contact h4 {
